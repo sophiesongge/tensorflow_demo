@@ -1,7 +1,11 @@
 import numpy as np
 import tensorflow as tf
 
-imagePath = '/Users/sophiesong/Documents/workspace/flower_photos/roses/3268459296_a7346c6b2c.jpg'
+import urllib.request
+import getopt
+import sys
+
+imagePath = ''
 modelFullPath = '/tmp/output_graph.pb'
 labelsFullPath = '/tmp/output_labels.txt'
 
@@ -48,5 +52,13 @@ def run_inference_on_image():
 
 
 if __name__ == '__main__':
+    opts,args = getopt.getopt(sys.argv[1:],'-i:-m:-l:',['imagePath=','modelFullPath=','labelsFullPath='])
+    for opt_name,opt_value in opts:
+        if opt_name in ('-i','--imagePath'):
+            imagePath = opt_value
+        if opt_name in ('-m','--modelFullPath'):
+            modelFullPath = opt_value
+        if opt_name in ('-l','--labelsFullPath'):
+            labelsFullPath = opt_value
     run_inference_on_image()
 
