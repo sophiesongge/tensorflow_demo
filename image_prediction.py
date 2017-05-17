@@ -1,7 +1,6 @@
 import numpy as np
 import tensorflow as tf
 
-import urllib.request
 import getopt
 import sys
 
