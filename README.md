@@ -30,7 +30,7 @@ $ python image_retrain.py --image_dir flower_photos
 To use your own trained model to predict a new image, you need to specify three pathes, the path of the image that you want to predict, the path of the model you want to use, and the labels that you want to use. By default the model and labels are set to: /tmp/output_graph.pb and /tmp/output_labels.txt . You can also specify your own model and labels by using the options -m (for model) and -l (for labels)
 
 ```
-$ curl -0 https://raw.githubusercontent.com/sophiesongge/tensorflow_demo/master/image_prediction.py
+$ curl -O https://raw.githubusercontent.com/sophiesongge/tensorflow_demo/master/image_prediction.py
 
 $ python image_prediction.py -i /PATH/TO/THE/IMAGE
 ```
