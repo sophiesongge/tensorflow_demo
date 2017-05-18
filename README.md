@@ -3,7 +3,7 @@
 This is a demo about how to use TensorFlow with Docker to re-train the last loyer of a model, to predict the object in the images.
 All you need is to install Docker on your local machine, you can [follow the steps here](https://docs.docker.com/engine/installation/).
 
-Then follow the steps as following:
+Then follow the steps:
 
 1. Run TensorFlow image in Docker:
 ```
