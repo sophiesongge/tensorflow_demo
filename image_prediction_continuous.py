@@ -60,5 +60,4 @@ if __name__ == '__main__':
         fileset = detector("./input", 0.5)
         if(len(fileset) != 0):
             imagePath = "./input/"+fileset.pop()
-            print(imagePath)
             run_inference_on_image()
