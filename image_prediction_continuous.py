@@ -57,8 +57,8 @@ def detector(dir, sec):
 
 if __name__ == '__main__':
     while True:
-        fileset = detector("/tmp/input", 0.5)
+        fileset = detector("./input", 0.5)
         if(len(fileset) != 0):
-            imagePath = "/tmp/input/"+fileset.pop()
+            imagePath = "./input/"+fileset.pop()
             print(imagePath)
             run_inference_on_image()
